@@ -14,6 +14,7 @@
 		6FADB1982A0C771900CF085C /* call_pracitceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FADB1972A0C771900CF085C /* call_pracitceTests.swift */; };
 		6FADB1A22A0C771900CF085C /* call_pracitceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FADB1A12A0C771900CF085C /* call_pracitceUITests.swift */; };
 		6FADB1A42A0C771900CF085C /* call_pracitceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FADB1A32A0C771900CF085C /* call_pracitceUITestsLaunchTests.swift */; };
+		6FADB1B12A0C789A00CF085C /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 6FADB1B02A0C789A00CF085C /* .gitattributes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		6FADB19D2A0C771900CF085C /* call_pracitceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = call_pracitceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FADB1A12A0C771900CF085C /* call_pracitceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = call_pracitceUITests.swift; sourceTree = "<group>"; };
 		6FADB1A32A0C771900CF085C /* call_pracitceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = call_pracitceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6FADB1B02A0C789A00CF085C /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		6FADB17A2A0C771800CF085C = {
 			isa = PBXGroup;
 			children = (
+				6FADB1B02A0C789A00CF085C /* .gitattributes */,
 				6FADB1852A0C771800CF085C /* call_pracitce */,
 				6FADB1962A0C771900CF085C /* call_pracitceTests */,
 				6FADB1A02A0C771900CF085C /* call_pracitceUITests */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FADB18E2A0C771900CF085C /* Preview Assets.xcassets in Resources */,
+				6FADB1B12A0C789A00CF085C /* .gitattributes in Resources */,
 				6FADB18B2A0C771900CF085C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
