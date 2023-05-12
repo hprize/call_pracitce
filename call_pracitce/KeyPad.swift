@@ -8,33 +8,42 @@
 import SwiftUI
 
 struct KeyPad: View {
+    
+    @State private var Number: String = ""
     var body: some View {
-        
+            
         VStack{
             VStack{
-                Text("2")
+                Text(Number)
                     .font(.system(size: 36))
-                    .padding()
-                
-                Button(action: {
-                 
-                }, label: {
-                    Text("번호 추가")
-                })
+                    .padding(.top, 25)
+                Spacer()
+                Menu ("번호 추가"){
+                    Section {
+                        Button(action: {}) {
+                            Label("새로운 연락처 등록", systemImage: "person.crop.circle")
+                        }
+                        Button(action: {}) {
+                            Label("기존의 연락처에 추가", systemImage: "person.crop.circle.badge.plus")
+                        }
+                    }
+                }
+                .padding(.bottom, 40)
+            }
+            Spacer()
+            VStack{
+                KeyLine_1(Number: $Number)
+                    .padding(.vertical, -3)
+                KeyLine_2(Number: $Number)
+                    .padding(.vertical, -3)
+                KeyLine_3(Number: $Number)
+                    .padding(.vertical, -3)
+                KeyLine_4(Number: $Number)
+                    .padding(.vertical, -3)
+                KeyLine_5_call(Number: $Number)
+                    .padding(.vertical, -3)
             }
             .padding(.bottom, 50)
-            VStack{
-                KeyLine_1()
-                    .padding(-1)
-                KeyLine_2()
-                    .padding(-1)
-                KeyLine_3()
-                    .padding(-1)
-                KeyLine_4()
-                    .padding(-1)
-                KeyLine_5_call()
-                    .padding(-1)
-            }
         }
     }
 }

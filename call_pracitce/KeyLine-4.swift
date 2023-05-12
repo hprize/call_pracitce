@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct KeyLine_4: View {
+    
+    @Binding var Number: String
     var body: some View {
         HStack {
             Button(action: {
-                
+                Number += "﹡"
             }, label: {
                 VStack {
                     Text("﹡")
@@ -26,7 +28,7 @@ struct KeyLine_4: View {
             .padding(12)
             
             Button(action: {
-                
+                Number += "0"
             }, label: {
                 VStack {
                     Text("0")
@@ -48,7 +50,7 @@ struct KeyLine_4: View {
             .padding(12)
             
             Button(action: {
-                
+                Number += "#"
             }, label: {
                 VStack {
                     Text("#")
@@ -68,6 +70,6 @@ struct KeyLine_4: View {
 
 struct KeyLine_4_Previews: PreviewProvider {
     static var previews: some View {
-        KeyLine_4()
+        KeyLine_4(Number: .constant("23"))
     }
 }

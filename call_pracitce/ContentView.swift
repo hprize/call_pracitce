@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
+        TabView(selection: .constant(1)) {
             Text("즐겨찾기")
                 .tabItem {
                     Text("즐겨찾기")
@@ -30,6 +30,7 @@ struct ContentView: View {
                     Text("키패드")
                     Image(systemName: "circle.grid.3x3.fill")
                 }
+                .tag(1)
             Text("음성 사서함")
                 .tabItem {
                     Text("음성 사서함")
